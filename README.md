@@ -1,8 +1,9 @@
+# copilot-sandbox
 ## AWS Copilot CLI Sample App
 
-This is a sample AWS Copilot sample app. You can use AWS Copilot to deploy this simple website to Amazon ECS. 
+This is a sample AWS Copilot sample app. You can use AWS Copilot to deploy this simple website to Amazon ECS.
 
-## Deploying 
+## Deploying
 
 To deploy this app, clone this repo and then run:
 
@@ -10,7 +11,7 @@ To deploy this app, clone this repo and then run:
 copilot init --app demo                  \
   --svc api                              \
   --svc-type 'Load Balanced Web Service' \
-  --dockerfile './Dockerfile'            \ 
+  --dockerfile './Dockerfile'            \
   --deploy
 ```
 
@@ -23,7 +24,7 @@ Copilot will set up the following resources in your account:
 
 ## Cleaning up
 
-Since this demo sets up resources in your account, let's delete them so you don't get charged: 
+Since this demo sets up resources in your account, let's delete them so you don't get charged:
 
 ```
 copilot app delete --env-profiles test=default
@@ -41,4 +42,4 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
 
-# copilot-sandbox
+
