@@ -24,5 +24,8 @@ stages:
     - # The name of the environment to deploy to.
       name: test
       # Optional: use test commands to validate this stage of your build.
-      # test_commands: [echo 'running tests', make test]
+      test_commands:
+        - echo 'running tests'
+        - make test
+        - echo 'tests passed'
 
